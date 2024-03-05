@@ -204,3 +204,65 @@ test("division by zero: a=10, b=0", () => {
     "Cannot divide by zero"
   );
 });
+
+// Test 1: ".todo" suffix
+test.todo("Test with .todo suffix: should add two numbers correctly");
+test("Regular test: should subtract two numbers correctly", () => {
+  const result = add(5, 3);
+  expect(result).toBe(8);
+});
+
+// Test 2: ".todo" suffix
+test.todo("Test with .todo suffix: should multiply two numbers correctly");
+test("Regular test: should divide two numbers correctly", () => {
+  const result = multiply(4, 2);
+  expect(result).toBe(8);
+});
+
+// Test 3: ".skip" suffix
+test.skip("Test with .skip suffix: should calculate something", () => {
+  // Test logic
+});
+
+// Test 4: ".skip" suffix
+test.skip("Test with .skip suffix: should perform some operation", () => {
+  // Test logic
+});
+
+// Test 5: ".skip" suffix
+test.skip("Test with .skip suffix: should handle a special case", () => {
+  // Test logic
+});
+
+// Describe block with ".only" suffix
+describe.only("Focused tests", () => {
+  // Nested Test 1
+  it("Nested test 1: should perform a focused task", () => {
+    // Test logic
+  });
+
+  // Nested Test 2
+  it("Nested test 2: should handle another focused case", () => {
+    // Test logic
+  });
+
+  // Nested Test 3 (outside .only block)
+  it("Nested test 3: should handle a general case", () => {
+    // Test logic
+  });
+});
+
+// Custom implementation of ".failing" scenario
+const failingTests = [true, false];
+
+for (const isFailing of failingTests) {
+  const testFunction = isFailing ? it.failing : it;
+
+  testFunction("Custom failing test: should demonstrate failure", () => {
+    if (isFailing) {
+      expect(false).toBe(true); // Simulate a failing assertion
+    } else {
+      expect(true).toBe(true); // Simulate a passing assertion
+    }
+  });
+}
