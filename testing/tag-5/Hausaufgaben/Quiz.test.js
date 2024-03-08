@@ -40,5 +40,3 @@ describe("isRightSolutionForQuestion function", () => {
     ).toThrow("Answer can only be a string");
   });
 });
-
-// Add more test cases as needed
