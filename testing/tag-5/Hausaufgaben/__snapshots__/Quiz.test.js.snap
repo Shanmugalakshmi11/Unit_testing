@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`isRightSolutionForQuestion function should throw an error for non-existing question: No such question 1`] = `"isRightSolutionForQuestion is not a function"`;
+
+exports[`isRightSolutionForQuestion function should throw an error for non-string answer: Answer can only be a string 1`] = `"isRightSolutionForQuestion is not a function"`;
